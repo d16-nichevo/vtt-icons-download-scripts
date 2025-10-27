@@ -17,5 +17,6 @@ Find the scripts in the project repository [here](https://github.com/d16-nichevo
 
 Important things to note when using these scripts:
 
+1. The scripts contain comments at the top that tell you more about what they download.
 1. Observe the last edit date of each script. If a script is particularly old, it may not work any longer, as the internet a forever-changing place. It's worth a try, right?
 1. The scripts download the files to the current working directory. Keep that in mind so you don't make a mess.
