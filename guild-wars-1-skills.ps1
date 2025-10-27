@@ -4,6 +4,8 @@ This script downloads high resolution skill icons from Guild Wars 1.
 The files can be seen here:
 https://wiki.guildwars.com/wiki/Gallery_of_high_resolution_skill_icons/large
 
+There are about 1253 icons totalling about 5.35 MB.
+
 Please see the readme.md here for more information:
 https://github.com/d16-nichevo/foundry-icon-download/blob/main/README.md
 #>
