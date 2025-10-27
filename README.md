@@ -10,7 +10,7 @@ These are PowerShell scripts that use the [Invoke-WebRequest](https://learn.micr
 
 How to run a PowerShell script is beyond the scope of this document, but you should be able to find guides online with an internet search.
 
-Find the scripts in the project repository [here](https://github.com/d16-nichevo/foundry-icon-download/tree/main). Scripts end with a `ps1` extension.
+Find the scripts in the project repository [here](https://github.com/d16-nichevo/foundry-icon-download/tree/main). Scripts have a `ps1` extension.
 
 Important things to note when using these scripts:
 
