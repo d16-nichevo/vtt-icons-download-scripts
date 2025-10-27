@@ -7,7 +7,7 @@ https://wiki.guildwars.com/wiki/Gallery_of_high_resolution_skill_icons/large
 There are about 1253 icons totalling about 5.35 MB.
 
 Please see the readme.md here for more information:
-https://github.com/d16-nichevo/foundry-icon-download/blob/main/README.md
+https://github.com/d16-nichevo/vtt-icons-download-scripts/blob/main/README.md
 #>
 
 wget https://wiki.guildwars.com/images/thumb/3/3c/%22Charge%21%22_%28large%29.jpg/100px-%22Charge%21%22_%28large%29.jpg -o Charge_large.jpg
