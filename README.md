@@ -8,9 +8,12 @@ This project contains a number of scripts that can be used to download icons fro
 
 These are PowerShell scripts that use the [Invoke-WebRequest](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/invoke-webrequest) [cmdlet](https://learn.microsoft.com/en-us/powershell/scripting/developer/cmdlet/cmdlet-overview) (alias `wget`) to download icons from locations on the internet.
 
-How to run a PowerShell script is beyond the scope of this document, but you should be able to find guides online with an internet search.
+How to run a PowerShell script is beyond the scope of this document, but you should be able to find guides online with an internet search. Here are some guides I found with a quick search:
 
-Find the scripts in the project repository [here](https://github.com/d16-nichevo/foundry-icon-download/tree/main). Scripts have a `ps1` extension.
+* https://sentry.io/answers/run-a-powershell-script/
+* https://netwrix.com/en/resources/blog/how-to-run-powershell-script/
+
+Find the scripts in the project repository [here](https://github.com/d16-nichevo/vtt-icons-download-scripts/tree/main). Scripts have a `ps1` extension.
 
 Important things to note when using these scripts:
 
