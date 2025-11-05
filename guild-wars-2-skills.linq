@@ -47,19 +47,26 @@ await Parallel.ForEachAsync(skillIds, options, async (skillId, token) =>
 	var json = await httpClient.GetStringAsync($"https://api.guildwars2.com/v2/skills/{skillId}");
 	using var doc = JsonDocument.Parse(json);	
 	// Get the skill's name and its icon:
-	var iconUrl = doc.RootElement.GetProperty("icon").GetString();
-	var name = doc.RootElement.GetProperty("name").GetString();
-	// Add this to our dictionary. The dictionary does not accept duplicates
-	// for its key, which is good, because we don't want to download the same
-	// URL many times:
-	if(iconUrlsDict.TryAdd(iconUrl, name))
+	JsonElement iconUrlElement;
+	JsonElement nameElement;
+	if(doc.RootElement.TryGetProperty("icon", out iconUrlElement)
+		&& doc.RootElement.TryGetProperty("name", out nameElement))
 	{
-		Console.WriteLine($"Parsed skill ID {skillId}. Found \"{name}\". Added new icon \"{iconUrl}\"");
+		var iconUrl = iconUrlElement.GetString();
+		var name = nameElement.GetString();
+		// Add this to our dictionary. The dictionary does not accept duplicates
+		// for its key, which is good, because we don't want to download the same
+		// URL many times:
+		if(iconUrlsDict.TryAdd(iconUrl, name))
+		{
+			Console.WriteLine($"Parsed skill ID {skillId}. Found \"{name}\". Added new icon \"{iconUrl}\"");
+		}
+		else
+		{
+			Console.WriteLine($"Parsed skill ID {skillId}. Found \"{name}\". Dropped already-existing icon \"{iconUrl}\"");
+		}
 	}
-	else
-	{
-		Console.WriteLine($"Parsed skill ID {skillId}. Found \"{name}\". Dropped already-existing icon \"{iconUrl}\"");
-	}
+
 	await Task.Delay(TimeSpan.FromSeconds(waitTimeSeconds));
 });
 
@@ -88,6 +95,6 @@ await Parallel.ForEachAsync(iconUrlsDict, options, async (kvp, ct) =>
 	// Save to disk:
 	File.WriteAllBytes(filePath, fileBytes);
 	Console.WriteLine($"Fetching icon for \"{kvp.Value}\"... Downloaded \"{fileName}\".");
-	
+
 	await Task.Delay(TimeSpan.FromSeconds(waitTimeSeconds));
 });
