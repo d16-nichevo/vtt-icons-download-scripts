@@ -8,10 +8,10 @@ This project does not include instructions on how to use or import downloaded im
 
 # Using these Scripts
 
-Some of these scripts are PowerShell scripts. Some are LINQPad scripts. Find the scripts in the project repository [here](https://github.com/d16-nichevo/vtt-icons-download-scripts/tree/main).
+Find the scripts in the project repository [here](https://github.com/d16-nichevo/vtt-icons-download-scripts/tree/main).
 
 * PowerShell scripts end with a `.ps1` extension.
-* LINQPad script end with a `.linq` extension.
+* LINQPad scripts end with a `.linq` extension.
 
 General notes about these scripts:
 
