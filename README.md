@@ -1,8 +1,10 @@
 # About this Project
 
-[Virtual Tabletop software](https://en.wikipedia.org/wiki/Digital_tabletop_game#Virtual_tabletops) uses icons for things like items, spells, skills, etc. Many VTTs come pre-packaged with icons, but it can be nice to have more.
+[Virtual Tabletop software](https://en.wikipedia.org/wiki/Digital_tabletop_game#Virtual_tabletops) uses icon images for things like items, spells, skills, etc. Many VTTs come pre-packaged with icons, but it can be nice to have more.
 
-This project contains a number of scripts that can be used to download icons from sources on the internet. This project ***does not*** contain the icons themselves. These scripts don't do anything you couldn't do manually with a browser and some patience.
+This project contains a number of scripts that can be used to download icon images from sources on the internet. This project ***does not*** contain the images themselves. These scripts don't do anything you couldn't do manually with a browser and some patience.
+
+This project does not include instructions on how to use or import downloaded images in your VTT. That said, if you are using Foundry VTT, you'll find information [here](https://foundryvtt.com/article/user-data/).
 
 # Using these Scripts
 
