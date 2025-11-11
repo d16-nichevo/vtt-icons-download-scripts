@@ -34,3 +34,10 @@ The PowerShell scripts in this project generally download the files to the curre
 These are files designed to be opened in [LINQPad](https://www.linqpad.net/Download.aspx). I used version 8, but other recent versions may work.
 
 LINQPad scripts contain C# code inside them. Open the `.linq` file in a text editor. If you're more comfortable running C# in another tool (such as Visual Studio or VSCode), you are certainly welcome to.
+
+# Other Sources
+
+Here are other places you can get icons. This is not intended to be an exhaustive list; your own search may turn up more!
+
+* [Complete World of Warcraft Icon Pack](https://barrens.chat/viewtopic.php?f=5&t=63)
+* [Complete World of Warcraft Vanilla/Classic Icon Pack](https://barrens.chat/viewtopic.php?f=5&t=901)
