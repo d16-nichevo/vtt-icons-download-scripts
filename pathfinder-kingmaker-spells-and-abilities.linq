@@ -87,7 +87,7 @@ await Parallel.ForEachAsync(iconUrlsDict, options, async (iconUrl, token) =>
 	// even though the filename may be PNG. So to we accurate
 	// we save with WEBP extension:
 	var fileName = iconUrl.Key.Replace(".png", ".webp");
-	var filePath = Path.Combine(saveFolder, iconUrl.Key);
+	var filePath = Path.Combine(saveFolder, fileName);
 
 	// Download the icon:
 	byte[] fileBytes = await httpClient.GetByteArrayAsync(iconUrl.Value);
