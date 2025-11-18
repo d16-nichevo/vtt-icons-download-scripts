@@ -17,6 +17,7 @@ General notes about these scripts:
 
 * The scripts contain comments at the top. These may contain important usage information, and may tell you more about what they download.
 * Observe the last edit date of each script. If a script is particularly old, it may not work any longer, as the internet a forever-changing place. It's worth a try, right?
+* These scripts aren't very robust. They will halt on various errors. If a script stops for you, try running it again. Sometimes a hiccup in the internet can halt a script and running it again is all that's needed.
 
 ## Using PowerShell Scripts
 
